@@ -1,0 +1,213 @@
+@media screen and (max-width: 767px) {
+  .header {
+    &__left-sidebar {
+      position: fixed;
+      top: 1rem;
+      z-index: 60;
+      left: 1rem;
+      &-humberger {
+        width: 1.28rem;
+      }
+      &-close-wrapper {
+        button {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__right-sidebar {
+      position: absolute;
+      top: 2rem;
+      right: 50%;
+      transform: translate(50%, 0);
+      &-logo {
+        width: 10.12056rem;
+        height: 6.9375rem;
+      }
+    }
+
+    &__content {
+      margin-top: 0;
+      flex-direction: column;
+      &-left {
+        pointer-events: none;
+        margin-left: 0;
+        & * {
+          pointer-events: all;
+        }
+        &-nv-mb {
+          display: block;
+          width: 4rem;
+          height: 5.625rem;
+          position: absolute;
+          top: 20.8rem;
+          right: 2rem;
+          z-index: 1;
+          transition: all 0.5s;
+        }
+        &-nv-mb.active {
+          top: 16.8rem;
+        }
+
+        &-frame {
+          display: none;
+        }
+        &-frame-mb {
+          width: 100vw;
+          height: 16.3125rem;
+          display: block;
+          margin-top: 16.5rem;
+          position: relative;
+          z-index: 2;
+        }
+        &-frame-decor {
+          display: none;
+        }
+        &-play-icon {
+          bottom: 14%;
+          width: 3.25rem;
+        }
+        video {
+          height: 11.75rem;
+          width: calc(100vw - 2.6rem);
+          right: 50%;
+          bottom: 0.4rem;
+          transform: translate(50%, 0);
+          border-radius: 0.75663rem;
+          z-index: 10;
+        }
+      }
+      &-right {
+        margin-top: 0.44rem;
+        margin-right: 0;
+        &-box {
+          margin-top: -1.6rem;
+        }
+        &-box-image {
+          display: none;
+        }
+        &-box-image-mb {
+          display: block;
+          width: 16rem;
+          height: auto;
+          transform: translate(0.5rem, 0);
+        }
+        &-box-message {
+          bottom: 0.5rem;
+          left: 65%;
+          transform: translate(-50%, 100%);
+          right: auto;
+          width: 12rem;
+        }
+        &-box-bobby {
+          width: 3.375rem;
+          position: absolute;
+          bottom: -2rem;
+          left: 0.5rem;
+        }
+        &-box-decor {
+          display: none;
+        }
+        &-size {
+          width: 3.81rem;
+          height: auto;
+          right: -2rem;
+          top: 1.5rem;
+        }
+        &-tym {
+          position: absolute;
+          top: 4.81rem;
+          left: 0.4rem;
+          width: 1.5rem;
+          height: 1.25rem;
+          display: block;
+          animation: main-decor-1-animation 2s ease-in-out infinite;
+        }
+        &-pink {
+          position: absolute;
+          top: 7rem;
+          left: -1.26rem;
+          width: 1.6875rem;
+          height: 2.5rem;
+          display: block;
+          animation: main-decor-1-animation 2s ease-in-out infinite;
+        }
+        &-jade {
+          position: absolute;
+          top: 6.19rem;
+          width: 2.375rem;
+          height: 2.4375rem;
+          right: -2.53rem;
+          display: block;
+          animation: main-decor-1-animation 2s ease-in-out infinite;
+        }
+      }
+    }
+
+    @keyframes scale-animation {
+      0% {
+        transform: translate(-50%, 100%) scale(0.9);
+      }
+      50% {
+        transform: translate(-50%, 100%) scale(1);
+      }
+      100% {
+        transform: translate(-50%, 100%) scale(0.9);
+      }
+    }
+  }
+  .header__left-sidebar-close {
+    width: 2rem;
+  }
+  .nav {
+    &__list {
+      opacity: 1;
+      padding: 1rem;
+    }
+    &__item {
+      font-size: 1.25rem;
+      text-decoration-line: underline;
+    }
+  }
+
+  .heading {
+    &__image {
+      display: none;
+    }
+    &__image__mb {
+      display: block;
+      width: 22.875rem;
+      height: 4rem;
+      position: absolute;
+      top: 10rem;
+      right: 0;
+    }
+
+    &__image-2 {
+      width: 20.9375rem;
+      height: 4.0625rem;
+      top: 14.19rem;
+      position: absolute;
+      right: 1rem;
+    }
+  }
+
+  .navigation {
+    position: relative;
+    margin-top: 3.4rem;
+    &__text-image {
+      width: 17.9375rem;
+    }
+    &__text-button {
+      width: 1.5rem;
+    }
+    &__text-title {
+      display: block;
+      width: 17.75rem;
+      position: absolute;
+      top: -1.5rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}
