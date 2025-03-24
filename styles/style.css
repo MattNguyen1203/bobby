@@ -47,31 +47,33 @@
 }
 .main__content-left-leaf-left {
   width: 20.4375rem;
-  transform: translate(12rem, 0rem);
+  transform: translate(12rem, -11rem);
   position: absolute;
   bottom: 8.5rem;
   left: 11.5rem;
   transition: transform 0.6s cubic-bezier(0.62, 0.22, 0.24, 0.92);
   transition-delay: 1s;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .main__content-left-leaf-right {
   width: 14.6875rem;
-  transform: translate(-11rem, 0rem);
+  transform: translate(-11rem, -11rem);
   position: absolute;
   transition: transform 0.6s cubic-bezier(0.62, 0.22, 0.24, 0.92);
   transition-delay: 1s;
   will-change: transform;
   bottom: 11.5rem;
   right: -1rem;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .main__content-left-cloud {
   margin-top: 1rem;
-  height: 39.1875rem;
+  width: 56.95644rem;
+  height: 52.36075rem;
   display: block;
   object-fit: contain;
   object-position: center;
+  transform: translate(11rem, -6rem);
   z-index: 0;
 }
 .main__content-left-bim {
@@ -102,11 +104,11 @@
   opacity: 1;
 }
 .main__content-left.active .main__content-left-leaf-left {
-  transform: translate(4rem, 0rem);
+  transform: translate(8rem, -11rem);
   opacity: 1;
 }
 .main__content-left.active .main__content-left-leaf-right {
-  transform: translate(-2rem, 0rem);
+  transform: translate(-3rem, -11rem);
   opacity: 1;
 }
 .main__content-badge {
@@ -992,24 +994,27 @@
   }
   .main__content-left-bim {
     height: 11.625rem;
-    right: 0.5rem;
-    top: 7.5rem;
+    right: -1.5rem;
+    top: 5.5rem;
   }
   .main__content-left-cloud {
     transform: translateX(-8rem);
-    height: 22.875rem;
+    height: 24.875rem;
+    width: 43rem;
   }
   .main__content-left-leaf-left {
     width: 13.4375rem;
-    bottom: 3.5rem;
-    left: -3.5rem;
-    transform: translate(7rem, 0rem);
+    /* bottom: 3.5rem;
+    left: -3.5rem; */
+    bottom: -4.5rem;
+    left: -5.5rem;
+    transform: translate(11rem, -11rem);
   }
   .main__content-left-leaf-right {
     width: 9.6875rem;
-    bottom: 5.5rem;
-    right: -1rem;
-    transform: translate(-7rem, 0rem);
+    bottom: -2.5rem;
+    right: -2rem;
+    transform: translate(-5rem, -11rem);
   }
   .main__content-left-bim-mb {
     display: none;
@@ -1024,7 +1029,7 @@
     bottom: 3rem;
   }
   .main__content-left.active {
-    transform: translateY(-5rem);
+    transform: translateY(-2rem);
   }
   .main__content-badge {
     margin-top: -6rem;
